@@ -10,6 +10,7 @@ regexes = []
 
 
 #YYYYMMDD_HHMMSS | YYYYMMDD_HHMMSS_Pano | YYYYMMDD_HHMMSS_HDR | YYYYMMDD_HHMMSS_Burst | IMG_YYYYMMDD_HHMMSS | PANO_YYYYMMDD_HHMMSS | VID_YYYYMMDD_HHMMSS | video-YYYYMMDD_HHMMSS | YYYYMMDD_HHMMSSnopm | YYYYMMDD_HHMMSS_nopm
+#doesn't hit on days of the month properly, particularly days at the end of the month, i.e. february
 #baseline regex: ([1-2]{1}[\d]{3})(0{1}[1-9]{1}|1{1}[0-2]{1})(0{1}\d{1}|1|[1-2]{1}[0-9]{1}|3{1}[0-1]{1})_([0-1]\d{1}|2{1}[0-3]{1})([0-5]{1}\d{1})([0-5]{1}\d{1})
 #(?:IMG_|PANO_|VID_|video-)*([1-2]{1}[\d]{3})(0{1}[1-9]{1}|1{1}[0-2]{1})(0{1}\d{1}|1|[1-2]{1}[0-9]{1}|3{1}[0-1]{1})_([0-1]\d{1}|2{1}[0-3]{1})([0-5]{1}\d{1})([0-5]{1}\d{1})(?:\.|_Pano\.|_HDR\.|_Burst\d*|[_]?nopm).*
 
